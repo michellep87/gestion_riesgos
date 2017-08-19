@@ -1,0 +1,174 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Menú {% endblock %}</title>
+
+
+    <!--STYLESHEET-->
+    <!--=================================================-->
+
+    <!--Open Sans Font [ OPTIONAL ]-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+
+
+    <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+
+    <!--Nifty Stylesheet [ REQUIRED ]-->
+    
+    <link rel="stylesheet" href="{% static 'css/nifty.min.css' %}">
+    
+
+    <!--Nifty Premium Icon [ DEMONSTRATION ]-->
+    <!-- <link href="css/demo/nifty-demo-icons.min.css" rel="stylesheet"> -->
+
+
+    <!--Demo [ DEMONSTRATION ]-->
+    <!-- <link href="css/demo/nifty-demo.min.css" rel="stylesheet"> -->
+
+
+        
+    <!--Switchery [ OPTIONAL ]-->
+    
+    <link href="{% static 'plugins/switchery/switchery.min.css' %}" rel="stylesheet">
+        
+
+    <!--Bootstrap Select [ OPTIONAL ]-->
+    <link href="{% static 'plugins/bootstrap-select/bootstrap-select.min.css' %}" rel="stylesheet">
+
+    <!--Bootstrap Tags Input [ OPTIONAL ]-->
+    
+    <link href="{% static 'plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.css' %}" rel="stylesheet">
+
+
+    <!--Chosen [ OPTIONAL ]-->
+   
+    <link href="{% static 'plugins/chosen/chosen.min.css' %}" rel="stylesheet">
+
+    <!--noUiSlider [ OPTIONAL ]-->
+    
+    <link href="{% static 'plugins/noUiSlider/nouislider.min.css' %}" rel="stylesheet">
+
+
+    <!--Select2 [ OPTIONAL ]-->
+    
+    <link href="{% static 'plugins/select2/css/select2.min.css' %}" rel="stylesheet">
+
+
+    <!--Bootstrap Timepicker [ OPTIONAL ]-->
+   
+    <link href="{% static 'plugins/bootstrap-timepicker/bootstrap-timepicker.min.css' %}" rel="stylesheet">
+
+
+    <!--Bootstrap Datepicker [ OPTIONAL ]-->
+   
+    <link href="{% static 'plugins/bootstrap-datepicker/bootstrap-datepicker.min.css' %}" rel="stylesheet">
+
+
+
+
+
+    
+    <!--JAVASCRIPT-->
+    <!--=================================================-->
+
+    <!--Pace - Page Load Progress Par [OPTIONAL]-->
+    <script src="{% static 'plugins/pace/pace.min.js' %}"></script>
+   
+    <link href="{% static 'plugins/pace/pace.min.css' %}" rel="stylesheet">
+
+    
+    <!--jQuery [ REQUIRED ]-->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+
+   
+    <!--BootstrapJS [ RECOMMENDED ]-->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+
+    <!--NiftyJS [ RECOMMENDED ]-->
+    <script src="{% static 'js/nifty.min.js' %}"></script>
+
+
+        
+    <style type="text/css">
+     .skin-black-light  .sidebar-menu>li:hover>a, .skin-black-light .sidebar-menu>li.active>a{
+      background-color: #269AFF;
+    }
+    .skin-black-light .sidebar-menu>li>.treeview-menu{
+      background-color: #fcfcf6;
+    }
+    .skin-black-light .wrapper, .skin-black-light .main-sidebar, .skin-black-light .left-side{
+      background-color: white;
+    }
+    .skin-black-light .sidebar-menu>li.header{
+      background-color: white;
+
+    }
+    .content-wrapper, .right-side{
+      background-color: #f8f8e9;
+
+
+    }
+
+  
+    .sub-style {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    color: #269AFF;
+    font-size: 12;
+    font-weight: bold;
+  }
+  </style>
+
+</head>
+
+<body class="hold-transition skin-black-light sidebar-mini">
+    <div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" 
+        data-progress="99" style="width: 100%;">
+        <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div></div>
+    <div id="container" class="effect aside-float aside-bright mainnav-lg">
+        <!--NAVBAR-->
+        <!--===================================================-->
+        <header id="navbar">
+            <div id="navbar-container" class="boxed">
+               <!--Brand logo & name-->
+                <!--================================-->
+                <div class="navbar-header">
+                    <a href="https://www.bi-dss.com" class="navbar-brand">
+                        <img src="img/logo.png" alt="" class="brand-icon">
+                        <div class="brand-title">
+                            <span class="brand-text">Bi-DSS</span>
+                        </div>
+                    </a>
+                </div>
+                <!--================================-->
+                <!--End brand logo & name-->
+                 <!--Navbar Dropdown-->
+                <!--================================-->
+                <div class="navbar-content clearfix">
+                    <ul class="nav navbar-top-links pull-left">
+
+                        <!--Navigation toogle button-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <li class="tgl-menu-btn">
+                            <a class="mainnav-toggle" href="#">
+                                <i class="glyphicon glyphicon-align-justify"></i>
+                            </a>
+                        </li>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End Navigation toogle button-->
+
+
+
+                        
+            </div>
+        </header>
+    </div>
+</body>
+</html>
